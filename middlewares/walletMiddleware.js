@@ -1,43 +1,3 @@
-// const validateSetupWalletRequest = (req, res, next) => {
-//   const { balance, name } = req.body;
-//   if (typeof balance !== "number" || typeof name !== "string") {
-//     return res.status(400).json({ error: "Invalid request format" });
-//   }
-//   next();
-// };
-
-// const transactionRequest = (req, res, next) => {
-//   const { amount, description } = req.body;
-//   if (typeof amount !== "number" || typeof description !== "string") {
-//     return res.status(400).json({ error: "Invalid request format" });
-//   }
-//   next();
-// };
-
-// const getWalletByIdRequest = (req, res, next) => {
-//   const { walletId } = req.body;
-//   if (typeof walletId !== "string") {
-//     return res.status(400).json({ error: "Invalid request format" });
-//   }
-//   next();
-// };
-
-// const getTransactions = (req, res, next) => {
-//   const { walletId } = req.body;
-//   if (typeof walletId !== "string") {
-//     return res.status(400).json({ error: "Invalid request format" });
-//   }
-//   next();
-// };
-
-// module.exports = {
-//   validateSetupWalletRequest,
-//   transactionRequest,
-//   getWalletByIdRequest,
-//   getTransactions,
-//   // Export other validation middleware functions
-// };
-
 const Joi = require("joi");
 
 const validateSetupWalletRequest = (req, res, next) => {
@@ -99,5 +59,4 @@ module.exports = {
   transactionRequest,
   getWalletByIdRequest,
   getTransactions,
-  // Export other validation middleware functions
 };

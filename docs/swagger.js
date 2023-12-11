@@ -1,13 +1,3 @@
-/* Swagger configuration */
-const options = {
-  openapi: "OpenAPI 3", // Enable/Disable OpenAPI. By default is null
-  language: "en-US", // Change response language. By default is 'en-US'
-  disableLogs: false, // Enable/Disable logs. By default is false
-  autoHeaders: false, // Enable/Disable automatic headers capture. By default is true
-  autoQuery: false, // Enable/Disable automatic query capture. By default is true
-  autoBody: false, // Enable/Disable automatic body capture. By default is true
-};
-
 const config = require("./../.env");
 const swaggerAutogen = require("swagger-autogen")();
 
@@ -21,7 +11,7 @@ const doc = {
       email: "kanikadawar5@gmail.com",
     },
   },
-  host: config.host,
+  host: config.HOST,
   schemes: ["http"],
   consumes: ["application/json"],
   produces: ["application/json"],

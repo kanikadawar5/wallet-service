@@ -1,0 +1,8 @@
+const WALLET_TRANSACTION_TYPES = {
+  CREDIT: "CREDIT",
+  DEBIT: "DEBIT",
+};
+const WALLET_ACTIONS = {
+  SETUP: "Setup",
+};
+module.exports = { WALLET_TRANSACTION_TYPES, WALLET_ACTIONS };
