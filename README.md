@@ -1,5 +1,3 @@
-Certainly! Below is a basic template for a `README.md` file for your project. Feel free to customize it further based on additional details you want to include.
-
 ````markdown
 # Wallet System
 
@@ -21,8 +19,8 @@ This project implements a simple wallet system backend using Node.js and MongoDB
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-wallet-project.git
-   cd your-wallet-project
+   git clone https://github.com/kanikadawar5/wallet-service.git
+   cd wallet-service
    ```
 ````
 
@@ -74,8 +72,3 @@ This project implements a simple wallet system backend using Node.js and MongoDB
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-```
-
-Make sure to replace placeholders like `kanikadawar5` and `Wallet Service` with your actual GitHub username and project name. Additionally, you might want to include a `LICENSE.md` file if you have a specific license for your project.
-```
