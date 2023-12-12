@@ -10,7 +10,7 @@ const setupWallet = async (req, res) => {
 
     await walletService.createTransaction({
       walletId: savedWallet._id,
-      amount: balance,
+      amount: parseFloat(balance).toFixed(4),
       description: WALLET_ACTIONS.SETUP,
       type: WALLET_TRANSACTION_TYPES.CREDIT,
     });
@@ -38,14 +38,11 @@ const transactAmount = async (req, res) => {
     }
 
     const transactionType =
-      amount >= 0 ? WALLET_TRANSACTION_TYPES.CREDIT : WALLET_TRANSACTION_TYPES.DEBIT;
+      parseFloat(amount) >= 0 ? WALLET_TRANSACTION_TYPES.CREDIT : WALLET_TRANSACTION_TYPES.DEBIT;
     const transaction = new Transaction({
       walletId: wallet._id,
       amount: Math.abs(amount),
-      balance:
-        transactionType === WALLET_TRANSACTION_TYPES.CREDIT
-          ? wallet.balance + amount
-          : wallet.balance - amount,
+      balance: (parseFloat(wallet.balance) + parseFloat(amount)).toFixed(4),
       description,
       type: transactionType,
     });
