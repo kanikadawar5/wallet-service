@@ -19,6 +19,8 @@ This project implements a simple wallet system backend using Node.js and MongoDB
    Mongodb is a managed service via atlas
 ## Demo
    Open http://34.100.252.15:3000/api url and try out the endpoints
+## Demo Recording
+   https://drive.google.com/file/d/1Tl93rym51BFvhl_82ceXhd4WVgQqsYIe/view?usp=sharing
 ## Installation
 
 1. Clone the repository:
